@@ -1,0 +1,457 @@
+@import 'font.css';
+@import 'icon.css';
+
+:root {
+    --font_R: 'Raleway';
+    --font_Ro: 'Roboto';
+    --font_AW: 'Font-awesome';
+    --tx: white;
+    --bc: black;
+    --navhov: rgba(105, 207, 23, 0.75);
+    --bigham: #69CF17;
+    --price: rgba(105, 207, 23, 0.5);
+    --btn: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    --navbac: rgba(0, 0, 0, 0.5);
+    --sticky: #292929;
+    --korzina: rgba(105, 207, 23, 0.9);
+    --main: #393636;
+    --imgwrp: linear-gradient(0deg, rgba(12, 12, 12, 0.72), rgba(12, 12, 12, 0.72));
+    --footer: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+    --bottom: #1A3406;
+    --mapdesc: #69CF17;
+    --pageinfo: rgba(105, 207, 23, 0.7);
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+.wrapper *::before,
+.wrapper *::after {
+    font-family: 'Font-awesome';
+
+}
+
+.wrapper {
+    font-family: var(--font_R);
+    font-weight: 400;
+    background: #1E1E1E;
+
+}
+
+.limiter {
+    display: -webkit-box;
+    overflow: hidden;
+    min-height: 5px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+
+.btn {
+    background: var(--btn);
+    border-radius: 6px;
+    color: var(--tx);
+    font-family: var(--font_R);
+    font-weight: 400;
+    font-size: 18px;
+    padding: 15px 70px;
+
+}
+
+.price {
+    background: var(--price);
+    border-radius: 6px;
+    color: var(--tx);
+    font-family: var(--font_R);
+    font-weight: 100;
+    font-size: 50px;
+    padding: 33px 76px;
+    /* backdrop-filter: blur(18px); */
+
+}
+
+.ads {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1E1E1E;
+
+}
+
+.icon-film {
+    width: 20px;
+    color: var(--tx);
+    margin-right: 5px;
+
+}
+
+.ads-text {
+    color: var(--tx);
+
+}
+
+.ads__list {
+    display: flex;
+    padding: 20px 0;
+
+}
+
+.ads__item a {
+    margin-right: 20px;
+    color: var(--tx);
+
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(125, 115, 115, 0.5);
+    backdrop-filter: blur(15px);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+nav {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul a {
+    padding: 22px 18px;
+    color: white;
+    font-size: 18px;
+    display: block;
+    transition: 500ms;
+
+}
+
+nav ul a:hover {
+    background: var(--navhov);
+    color: var(--tx);
+
+}
+
+
+
+/* banner */
+
+
+
+.banner__rek {
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.banner__pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.banner__content {
+    position: relative;
+    background: rgba(12, 12, 12, 0.72);
+    padding: 167px 245px 179px 200px;
+
+}
+
+.banner__container {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.banner__title {
+    font-family: var(--font_R);
+    font-weight: 900;
+    font-size: 72px;
+    color: #69CF17;
+
+}
+
+.banner__paragraf {
+    font-family: var(--font_R);
+    font-weight: 400;
+    font-size: 36px;
+    color: #69CF17;
+    margin: 18px 0;
+
+}
+
+.banner__desc {
+    font-family: var(--font_R);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--tx);
+    margin-bottom: 30px;
+    -webkit-line-clamp: 3;
+
+}
+
+.banner__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+/* infobar */
+
+
+
+.info__wrap {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+
+}
+
+.info__with {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.info__title {
+    position: absolute;
+    color: #69CF17;
+    font-size: 55px;
+    font-family: var(--font_R);
+    font-weight: 700;
+
+}
+
+.info__text {
+    margin-top: 30px;
+
+}
+
+.info__desc {
+    color: var(--tx);
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    font-family: var(--font_R);
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .food */
+
+
+
+.food {
+    width: min(100%, 370px);
+    padding: 15px;
+    display: grid;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    grid-auto-rows: 370px;
+    grid-column: 524px;
+    /* grid-template-columns: repeat(8, 1fr); */
+    /* gap: 30px; */
+    /* grid-auto-rows: 524px; */
+
+}
+
+.food__item {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.food__pic {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food__link {
+    position: relative;
+    /* background: var(--bigham); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.icon-shop {
+    color: var(--tx);
+    font-size: 62px;
+    opacity: 1;
+
+}
+
+.food__content {
+    color: var(--tx);
+
+
+}
+
+
+
+
+
+
+
+
+/* map */
+
+
+
+.map {
+    margin-top: 30px;
+
+}
+
+.map__desc {
+    background: var(--tx);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-family: var(--font_R);
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--mapdesc);
+
+}
+
+.map__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+/* footer */
+
+
+
+
+footer {
+    background: var(--footer);
+    padding: 30px 0 82px;
+
+}
+
+.foot {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 81px;
+
+}
+
+.foot__tel {
+    font-size: 20px;
+    color: var(--tx);
+    font-family: var(--font_Ro);
+    font-weight: 700;
+}
+
+
+.cent {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot__link {
+    color: var(--tx);
+    font-family: var(--font_Ro);
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+
+}
+
+.foot__bottom {
+    background: var(--bottom);
+    padding: 20px 0;
+
+}
+
+.foot__desc {
+    font-family: var(--font_Ro);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--tx);
+    text-align: center;
+
+}

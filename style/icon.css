@@ -1,0 +1,9 @@
+.icon-film::before{
+    content: '\f277';
+    font-weight: 300;
+}
+
+.icon-shop::before{
+    content: '\f217';
+    font-weight: 300 ;
+}
